@@ -155,13 +155,15 @@ function reverse(string) {
   // Turn the string into an array.
   // Cycle through the array, adding each character to the front of the array
   // Return the new array
-  var summationValue = 0;
+
+  let string_array = Array.from(string);
+  let reversed_string = [];
   for (let character = 0; character < string.length; character++) {
-    summationValue = summationValue + nums[value];
+    reversed_string.unshift(string_array[character]);
   }
+
+  return reversed_string;
 }
-
-
 
 
   // ---------------------
