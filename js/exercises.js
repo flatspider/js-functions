@@ -172,17 +172,40 @@ function reverse(string) {
 
   // Input: Array of words
   // Output: one word, that is the longest
-  // One-line description: Take an array of words and find the longest one. 
+  // One-line description: Take an array of words and return the length of the longest one. 
 
   // Function: findLongestWord()
   // Parameter: array of words
-  // Return: longest word
+  // Return: the length of the longest word
 
 
   function findLongestWord(wordArray) {
 
     // Look at each word in the array
+    // Check the length in the array
+    // Store the lengths in another array
+    // Now I have an array of lengths.
+    // Find the maximum value
+    // Maybe can recursively call max(max(array),max(array))
 
+    let lengthWords = [];
+    let highest_value = 0;
+
+    for (let i = 0; i < wordArray.length; i++) {
+      lengthWords.push(wordArray[i].length);
+    }
+
+    highest_value = lengthWords[0]; // Set the highest value to the first length value.
+
+    for (let lens = 0; lens < lengthWords.length; lens++) {
+      
+      if (highest_value > lengthWords[lens]) {
+        highest_value = lengthWords[lens]
+      }
+    }
+
+    return highest_value;
+    
   }
 
 
