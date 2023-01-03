@@ -33,6 +33,14 @@ function doSomethingCool() {
 
 // Put your answer below -------------------------
 
+// Input:  No user input
+// Output: Calls the console.log
+// One-line description: Print the phrase "Something cool!"
+
+// Function: = () =>
+// Parameter: n/a
+// Return: nothing returned
+
 var cool = () => console.log("Something Cool!");
 
 
@@ -54,6 +62,15 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
 
 setTimeout(function () {
   alert("Hello, World!");
@@ -90,6 +107,19 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
+
+
+
+
+
 
 // -----------------------------------------------
 
@@ -111,6 +141,15 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
+
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
 
 var reverseStr = function(str) {
   return str.split("").reverse().join("");
@@ -149,7 +188,13 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+// Input:
+// Output:
+// One-line description:
 
+// Function:
+// Parameter:
+// Return:
 
 // -----------------------------------------------
 
@@ -166,6 +211,15 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
 
 
 // -----------------------------------------------
@@ -190,6 +244,20 @@ var callTenTimes = function(callback) {
 // callTenTime(functionName);
 
 // Put your answer below -------------------------
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
+
+
+
+
+
 
 
 // -----------------------------------------------
@@ -221,6 +289,22 @@ var decreaseScore = function() {
 
 
 
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
+
+
+
+
+
+
+
+
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -239,6 +323,20 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
+
+
+
+
+
 
 
 
@@ -266,6 +364,22 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+
+
+// Input:
+// Output:
+// One-line description:
+
+// Function:
+// Parameter:
+// Return:
+
+
+
+
+
+
+
 
 
 
