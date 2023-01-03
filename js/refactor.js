@@ -33,6 +33,8 @@ function doSomethingCool() {
 
 // Put your answer below -------------------------
 
+var cool = () => console.log("Something Cool!");
+
 
 // -----------------------------------------------
 
