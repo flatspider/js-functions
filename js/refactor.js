@@ -63,18 +63,16 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
-// Input:
-// Output:
-// One-line description:
+// Input: sayHi(), 2000
+// Output: a delayed Hello, World!
+// One-line description: Call the function sayHi() after pausing for 2000ms.
 
-// Function:
-// Parameter:
-// Return:
+// Function: function () {}
+// Parameter:{body code}
+// Return: "Hello, World!"
 
 
-setTimeout(function () {
-  alert("Hello, World!");
-}, 2000);
+setTimeout(function () {alert("Hello, World!");}, 2000);
 
 
 
@@ -107,18 +105,18 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
-// Input:
-// Output:
-// One-line description:
+// Letter [c]: z then y
+
+// Input: variable set to X
+// Output: Two console.logs
+// One-line description: The code calls the setTimeout then runs console.log.
 
 // Function:
 // Parameter:
 // Return:
 
-
-
-
-
+//Letter is x set by VAR. 
+// First timeout after 1ms sets letter to y and prints the letter is y.
 
 
 // -----------------------------------------------
