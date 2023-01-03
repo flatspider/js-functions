@@ -230,12 +230,15 @@ function reverse(string) {
       lengthWords.push(wordArray[i].length);
     }
 
+    console.log(lengthWords);
+
     highest_value = lengthWords[0]; // Set the highest value to the first length value.
 
     for (let lens = 0; lens < lengthWords.length; lens++) {
       
-      if (highest_value > lengthWords[lens]) {
-        highest_value = lengthWords[lens]
+      if (highest_value < lengthWords[lens]) {
+        highest_value = lengthWords[lens];
+        console.log(highest_value);
       }
     }
 
@@ -256,6 +259,7 @@ function reverse(string) {
   // Function: filterLongWords()
   // Parameter: arrayWords, length_requirement
   // Return: longArrayWords
+ 
 
 
   function filterLongWords(wordArray, length_requirement) {
@@ -270,7 +274,7 @@ function reverse(string) {
     let long_words = [];
 
     for (let word = 0; word < wordArray.length; word++) {
-      if (wordArray[word] > length_requirement) {
+      if (wordArray[word].length > length_requirement) {
         long_words.push(wordArray[word]);
       }
     }
@@ -335,8 +339,6 @@ function reverse(string) {
   console.assert(isVowel('a') === true, 'ERROR function isVowel');
 
   console.assert(isVowel('b') == false, 'ERROR function isVowel');
-
-  console.log(rovarspraket("this is fun")); //PRINT TEST
 
   console.assert(rovarspraket("this is fun") === "tothohisos isos fofunon", 'ERROR function rovarspraket');
 
