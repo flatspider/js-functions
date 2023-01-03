@@ -395,20 +395,18 @@ var accelerate = function(amount) {
 // Put your answer below -------------------------
 
 
-// Input:
-// Output:
-// One-line description:
 
-// Function:
-// Parameter:
-// Return:
+// If no amount is given, the function passes "nothing" to the amount variable. 
+// The function then takes the speed number and adds it to "nothing". This causes speed to return as NaN.
 
 
+var speed = 0;
 
+var accelerate = function(amount = 1) {
+  speed += amount;
+};
 
-
-
-
+// The function now has a default value of 1 to add to the speed. 
 
 
 
