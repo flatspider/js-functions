@@ -349,16 +349,20 @@ var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
-// Input:
-// Output:
-// One-line description:
+// Input: number A, number B
+// Output: console.log(sum)
+// One-line description: The function takes two numbers and prints the sum to the console.
 
-// Function:
-// Parameter:
-// Return:
+// Function: function(num1, num2)
+// Parameter:num1,num2
+// Return: return the sum
 
 
+var addNumbers = function(numberA, numberB) {
+  return numberA + numberB;
+};
 
+var twoPlusTwo = addNumbers(2,2);
 
 
 
