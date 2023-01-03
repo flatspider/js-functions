@@ -85,13 +85,11 @@ let modified_sentence = Array.from(sentence);
 let offset = 0;
 
   for (let character = 0; character < sentence.length; character++) {
-    if (isVowel(sentence[character] == false) { //If the character is NOT a vowel
+    if (isVowel(sentence[character] == false)) { //If the character is NOT a vowel
       //Return the character as Original character + 'o' + original character
       modified_sentence[character + offset] = sentence[character] + 'o' + sentence[character];
       offset = offset + 2;
-    } else {
-      //nothing happens
-    }
+    } 
 
   }
 
@@ -128,7 +126,7 @@ return modified_sentence;
   // Parameter: array submitted by user
   // Return: Each element of the array multiplied by each other
 
-  function multiply(...nums) {
+  function multiply(nums) {
     var multiplyValue = 1;
     for (let value = 0; value < nums.length; value++) {
       multiplyValue = multiplyValue * nums[value];
@@ -214,27 +212,73 @@ function reverse(string) {
   // 8. Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: Array of words, an integer
+  // Output: Array of words longer than integer
+  // One-line description: Return words that are LONGER than the provided integer.
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: filterLongWords()
+  // Parameter: arrayWords, length_requirement
+  // Return: longArrayWords
 
 
+  function filterLongWords(wordArray, length_requirement) {
+
+    // Get an array of words. [cat, dog, puppy]
+    // Get a length requirement. 
+    // Cycle through the array and compare array.length to the length requirement.
+    // The word.length must be GREATER THAN than the word.
+    // If the word.length is greater than, add that word to the long words array.
+    // Return the long words array.
+
+    let long_words = [];
+
+    for (let word = 0; word < wordArray.length; word++) {
+      if (wordArray[word] > length_requirement) {
+        long_words.push(wordArray[word]);
+      }
+    }
+
+    return long_words;
+
+  }
 
   // ---------------------
   // 9. Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: A string of characters.
+  // Output: An object that identifies each character with the number of times it appears.
+  // One-line description: Take in a string and return an object with each character and how often it appears. 
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: charFreq()
+  // Parameter: string
+  // Return: {Obj}
+
+  function charFreq(string) {
+
+    // A string is input. 
+    // Turn the string into an array.
+    // Cycle through the string/array characters.
+    // Check if the character is already in the object. // Could also create an object with every letter in it.
+    // If it is not, add the character in with a 1 count. 
+    // If the character is already listed, add 1 to the character in the object. 
+    // Move to next character in big string. 
+    // At end of string, end loop.
+    // Return the object?
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 
 
   ////////////////////////////////////////////////////////////////////////
