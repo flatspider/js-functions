@@ -112,7 +112,7 @@ return modified_sentence;
   // Parameter: array submitted by user
   // Return: all array elements added together
 
-  function sum(...nums) {
+  function sum(nums) { //Does this need to use the rest parameter ...nums?
     var summationValue = 0;
     for (let value = 0; value < nums.length; value++) {
       summationValue = summationValue + nums[value];
@@ -170,13 +170,20 @@ function reverse(string) {
   // 7. Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: Array of words
+  // Output: one word, that is the longest
+  // One-line description: Take an array of words and find the longest one. 
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: findLongestWord()
+  // Parameter: array of words
+  // Return: longest word
+
+
+  function findLongestWord(wordArray) {
+
+    // Look at each word in the array
+
+  }
 
 
 
