@@ -79,21 +79,28 @@ function isVowel(char1) {
 
 function rovarspraket(sentence) {
 
-// May need to build a new word/string. 
 
-let modified_sentence = Array.from(sentence);
-let offset = 0;
+  var final_sentence = [];
+  let sent_array = Array.from(sentence);
 
-  for (let character = 0; character < sentence.length; character++) {
-    if (isVowel(sentence[character] == false)) { //If the character is NOT a vowel
-      //Return the character as Original character + 'o' + original character
-      modified_sentence[character + offset] = sentence[character] + 'o' + sentence[character];
-      offset = offset + 2;
+
+  for (let character = 0; character < sent_array.length; character++) {
+    if (isVowel(sent_array[character]) == false) { 
+      //If the character is NOT a vowel
+      // Return the character as Original character + 'o' + original character
+      // I need to just ADD these characters to a new array. 
+      // var result = myArray.join(''); This will squeeze my array together and remove all of the delimiters.
+      final_sentence.push(sent_array[character],'o',sent_array[character]);
+      
+    } else { // Just add the character to the end. What if its a space?
+      final_sentence.push(sentence[character])
     } 
 
   }
 
-return modified_sentence;
+  var string_time = final_sentence.join('');
+
+return string_time;
 
 }
 
@@ -160,7 +167,9 @@ function reverse(string) {
     reversed_string.unshift(string_array[character]);
   }
 
-  return reversed_string;
+  var string_time = reversed_string.join('');
+
+  return string_time;
 }
 
 
@@ -265,6 +274,8 @@ function reverse(string) {
     // Move to next character in big string. 
     // At end of string, end loop.
     // Return the object?
+
+
 
 
 
