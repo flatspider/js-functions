@@ -230,7 +230,7 @@ function reverse(string) {
       lengthWords.push(wordArray[i].length);
     }
 
-    console.log(lengthWords);
+    
 
     highest_value = lengthWords[0]; // Set the highest value to the first length value.
 
@@ -238,7 +238,6 @@ function reverse(string) {
       
       if (highest_value < lengthWords[lens]) {
         highest_value = lengthWords[lens];
-        console.log(highest_value);
       }
     }
 
@@ -307,19 +306,37 @@ function reverse(string) {
     // At end of string, end loop.
     // Return the object?
 
+    var splitString = string.split(""); // This turns the entered string into an array
+
+    console.log(splitString); //Print test
+
+    let freqCount = {}; // Creates an empty object Access items by freqCount.property
+
+    for (let i = 0; i < string.length; i++) {
+
+      
+
+        var letter = splitString[i];
+
+        if(freqCount.hasOwnProperty(letter)) {
+          freqCount.letter = freqCount.letter + 1;
+        } else {
+          freqCount.letter = 1;
+        }
 
 
+      /*
 
+      if (freqCount.hasOwnProperty(splitString[i])) {
+        freqCount.splitString[i] = freqCount.splitString[i] + 1;
+      } else {
+        freqCount.splitString[i] = 1;
+        console.log("Timer");
+      }
+   */
+    }
 
-
-
-
-
-
-
-
-
-
+    return freqCount;
 
   }
 
