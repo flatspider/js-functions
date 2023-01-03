@@ -111,9 +111,6 @@ console.log("The letter is", letter);
 // Output: Two console.logs
 // One-line description: The code calls the setTimeout then runs console.log.
 
-// Function:
-// Parameter:
-// Return:
 
 //Letter is x set by VAR. 
 // First timeout after 1ms sets letter to y and prints the letter is y.
@@ -141,11 +138,11 @@ var reverseStr = function(str) {
 // Put your answer below -------------------------
 
 
-// Input:
-// Output:
-// One-line description:
+// Input: str
+// Output: reversed string
+// One-line description: Take the string and reverse the characters.
 
-// Function:
+// Function: function(str) {}
 // Parameter:
 // Return:
 
@@ -186,13 +183,26 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
-// Input:
-// Output:
-// One-line description:
+// Input: colorName
+// Output: hex code
+// One-line description: Convert the spanish word for a color to the hex code. 
 
-// Function:
-// Parameter:
-// Return:
+// Function: function()
+// Parameter: colorName
+// Return: Hex value
+
+
+var spanishColor = function(colorName) {
+  const colorCodes = {
+    "rojo": "#ff0000",
+    "blanco": "#ffffff",
+    "azul": "#0000ff",
+    "verde": "#00ff00",
+    "negro": "#000000"
+  }
+
+  return colorCodes[colorName.toLowerCase()];
+};
 
 // -----------------------------------------------
 
@@ -209,6 +219,10 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
+
+var foo;
+
+foo = "bar";
 
 // Input:
 // Output:
