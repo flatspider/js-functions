@@ -2,8 +2,16 @@
   'use strict';
 
   // ---------------------
-  // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
+  // 1. Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
+
+  // Input: are two numbers from the user. 
+  // Output: is the maximum of the two numbers. 
+  // One-line description: The function returns the largest number.
+
+  // Function: max()
+  // Parameter: number 1 and number 2
+  // Return: the highest value
 
 function max(num1, num2) {
   if (num1 > num2) {
@@ -14,9 +22,16 @@ function max(num1, num2) {
 }
 
   // ---------------------
-  // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
+  // 2. Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
 
   function maxOfThree(num1, num2, num3) {
     if (num1 > num2 && num1 > num3) {
@@ -30,8 +45,17 @@ function max(num1, num2) {
 
 
   // ---------------------
-  // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+  // 3. Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
+
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
+
 
 function isVowel(char1) {
   if (char1 === 'a' || char1 === 'e' || char1 === 'i' || char1 === 'o' || char1 === 'u') {
@@ -42,8 +66,16 @@ function isVowel(char1) {
 }
 
   // ---------------------
-  // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
+  // 4. Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
+
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
 
 function rovarspraket(sentence) {
 
@@ -53,7 +85,7 @@ function rovarspraket(sentence) {
 let modified_sentence = Array.from(sentence);
 let offset = 0;
 
-  for (var character = 0; character < sentence.length; character++) {
+  for (let character = 0; character < sentence.length; character++) {
     if (isVowel(sentence[character] == false) { //If the character is NOT a vowel
       //Return the character as Original character + 'o' + original character
       modified_sentence[character + offset] = sentence[character] + 'o' + sentence[character];
@@ -70,32 +102,86 @@ return modified_sentence;
 }
 
   // ---------------------
-  // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
+  // 5. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
 
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
+
+function sum(...nums) {
+  var summationValue = 0;
+  for (let value = 0; value < nums.length; value++) {
+    summationValue = summationValue + nums[value];
+  }
+  return summationValue;
+}
+
+
+
+
+
+
+
 
   // ---------------------
-  // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
+  // 6. Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
 
 
+  // Input:
+  // Output:
+  // One-line description:
 
-  // ---------------------
-  // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
-  // ---------------------
-
-
-
-  // ---------------------
-  // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
-  // ---------------------
-
+  // Function:
+  // Parameter: 
+  // Return:
 
 
   // ---------------------
-  // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
+  // 7. Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
+
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
+
+
+
+  // ---------------------
+  // 8. Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
+  // ---------------------
+
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
+
+
+
+  // ---------------------
+  // 9. Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
+  // ---------------------
+
+  // Input:
+  // Output:
+  // One-line description:
+
+  // Function:
+  // Parameter: 
+  // Return:
 
 
   ////////////////////////////////////////////////////////////////////////
