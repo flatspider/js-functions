@@ -79,6 +79,32 @@ function isVowel(char1) {
 
 function rovarspraket(sentence) {
 
+  var splitString = sentence.split("");
+  var tempWord;
+  var final_word = [];
+
+    for (let i = 0; i < sentence.length; i++) {
+      if (isVowel(splitString[i]) || splitString[i] === " ") {
+        final_word.push(splitString[i]);
+      } else {
+        tempWord = splitString[i] + 'o' + splitString[i];
+        final_word.push(tempWord);
+      }
+
+    }
+
+
+      final_word = final_word.join("");
+
+      return final_word;
+
+
+    
+
+  }
+
+
+/*
 
   var final_sentence = [];
   let sent_array = Array.from(sentence);
@@ -103,6 +129,8 @@ function rovarspraket(sentence) {
 return string_time;
 
 }
+
+*/
 
   // ---------------------
   // 5. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
@@ -307,6 +335,8 @@ function reverse(string) {
   console.assert(isVowel('a') === true, 'ERROR function isVowel');
 
   console.assert(isVowel('b') == false, 'ERROR function isVowel');
+
+  console.log(rovarspraket("this is fun")); //PRINT TEST
 
   console.assert(rovarspraket("this is fun") === "tothohisos isos fofunon", 'ERROR function rovarspraket');
 
