@@ -25,13 +25,13 @@ function max(num1, num2) {
   // 2. Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: Three numbers provided by the user
+  // Output: The highest number of the three
+  // One-line description: Return the largest number of three values
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: maxOfThree()
+  // Parameter: number 1, number 2, number 3
+  // Return: the highest value
 
   function maxOfThree(num1, num2, num3) {
     if (num1 > num2 && num1 > num3) {
@@ -48,13 +48,13 @@ function max(num1, num2) {
   // 3. Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: A single character
+  // Output: True or false
+  // One-line description: If the character is a vowel, return true. Otherise, return false.
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: isVowel()
+  // Parameter: Character provided by user
+  // Return: True or false
 
 
 function isVowel(char1) {
@@ -69,18 +69,17 @@ function isVowel(char1) {
   // 4. Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: A string of characters
+  // Output: Each consonant in the string has been replaced with "Character O Character"
+  // One-line description: Modify the string in order to double each consonant and add an 'o' between the consonants.
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: rovarspraket()
+  // Parameter: string
+  // Return: sostotrorinongog (The modified string)
 
 function rovarspraket(sentence) {
 
 // May need to build a new word/string. 
-
 
 let modified_sentence = Array.from(sentence);
 let offset = 0;
@@ -96,7 +95,6 @@ let offset = 0;
 
   }
 
-
 return modified_sentence;
 
 }
@@ -106,27 +104,37 @@ return modified_sentence;
   // ---------------------
 
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: an array greater than length 0
+  // Output: each element of the array summed together
+  // One-line description: Add together all of the numbers in the array.
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: sum()
+  // Parameter: array submitted by user
+  // Return: all array elements added together
 
-function sum(...nums) {
-  var summationValue = 0;
-  for (let value = 0; value < nums.length; value++) {
-    summationValue = summationValue + nums[value];
+  function sum(...nums) {
+    var summationValue = 0;
+    for (let value = 0; value < nums.length; value++) {
+      summationValue = summationValue + nums[value];
+    }
+    return summationValue;
   }
-  return summationValue;
-}
 
+  // Input: an array greater than length 0
+  // Output: each element of the array is multiplied in sequence
+  // One-line description: Take the elements in the array and multiply them 
 
+  // Function: multiply()
+  // Parameter: array submitted by user
+  // Return: Each element of the array multiplied by each other
 
-
-
-
+  function multiply(...nums) {
+    var multiplyValue = 1;
+    for (let value = 0; value < nums.length; value++) {
+      multiplyValue = multiplyValue * nums[value];
+    }
+    return multiplyValue;
+  }
 
 
   // ---------------------
@@ -134,13 +142,26 @@ function sum(...nums) {
   // ---------------------
 
 
-  // Input:
-  // Output:
-  // One-line description:
+  // Input: A string provided by the user
+  // Output: The string reversed
+  // One-line description: Reverse the string that is provided. 
 
-  // Function:
-  // Parameter: 
-  // Return:
+  // Function: reverse()
+  // Parameter: string
+  // Return: gnirts (the reversed string)
+
+function reverse(string) {
+
+  // Turn the string into an array.
+  // Cycle through the array, adding each character to the front of the array
+  // Return the new array
+  var summationValue = 0;
+  for (let character = 0; character < string.length; character++) {
+    summationValue = summationValue + nums[value];
+  }
+}
+
+
 
 
   // ---------------------
