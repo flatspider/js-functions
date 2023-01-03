@@ -18,6 +18,16 @@ function max(num1, num2) {
   // ---------------------
 
 
+  function maxOfThree(num1, num2, num3) {
+    if (num1 > num2 && num1 > num3) {
+      return num1;
+    } else if (num2 > num1 && num2 > num3) {
+      return num2;
+    } else {
+      return num3;
+    }
+  }
+
 
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
