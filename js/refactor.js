@@ -198,7 +198,7 @@ var spanishColor = function(colorName) {
     "blanco": "#ffffff",
     "azul": "#0000ff",
     "verde": "#00ff00",
-    "negro": "#000000"
+    "negro": "#000000",
   }
 
   return colorCodes[colorName.toLowerCase()];
@@ -257,13 +257,20 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-// Input:
-// Output:
-// One-line description:
+// Input: another function
+// Output: the function called 10 times
+// One-line description: Use the function to call another function 10 times
 
-// Function:
-// Parameter:
-// Return:
+// Function: function callNtimes()
+// Parameter: function, Ntimes
+// Return: the called function N times
+
+
+function callNtimes(func,number) {
+  for (let count = 0; count < number; count++) {
+    func;
+  }
+}
 
 
 
@@ -299,16 +306,22 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+// Since score is a var and is globally accessible, you need to hide the variable from being directly accessed by the console
+// This refactor wraps the score variable inside of a function. 
 
+(function (){
 
-// Input:
-// Output:
-// One-line description:
+var score = 0;
 
-// Function:
-// Parameter:
-// Return:
+var increaseScore = function() {
+  score++;
+};
 
+let decreaseScore = function() {
+  score--;
+};
+
+})();
 
 
 
