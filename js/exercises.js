@@ -306,22 +306,20 @@ function reverse(string) {
     // At end of string, end loop.
     // Return the object?
 
-    var splitString = string.split(""); // This turns the entered string into an array
 
-    console.log(splitString); //Print test
 
-    let freqCount = {}; // Creates an empty object Access items by freqCount.property
+    const freqCount = {}; // Creates an empty object Access items by freqCount.property
 
     for (let i = 0; i < string.length; i++) {
 
       
 
-        var letter = splitString[i];
+        const letter = string[i];
 
-        if(freqCount.hasOwnProperty(letter)) {
-          freqCount.letter = freqCount.letter + 1;
+        if(freqCount[letter]) {
+          freqCount[letter] = freqCount[letter] + 1;
         } else {
-          freqCount.letter = 1;
+          freqCount[letter] = 1;
         }
 
 
