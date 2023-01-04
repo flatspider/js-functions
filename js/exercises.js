@@ -129,7 +129,6 @@ function rovarspraket(sentence) {
 return string_time;
 
 }
-
 */
 
   // ---------------------
@@ -145,12 +144,19 @@ return string_time;
   // Parameter: array submitted by user
   // Return: all array elements added together
 
+  /*
   function sum(nums) { //Does this need to use the rest parameter ...nums?
     var summationValue = 0;
     for (let value = 0; value < nums.length; value++) {
       summationValue = summationValue + nums[value];
     }
     return summationValue;
+  }
+  */
+
+  function sum(arr) {
+      return arr.reduce(function(acc, i){return acc + i;}); 
+      //Reduce method takes a function and will run that funciton as it loops through the array. function(accumulated value, current index) 
   }
 
   // Input: an array greater than length 0
